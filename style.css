@@ -1,0 +1,38 @@
+.size{
+    width:100px;
+    height: auto;
+}
+
+.btn {
+    color:black;
+    background-color: white; 
+    border-color: black;
+}
+.btn:hover{
+    color: white;
+    background-color: blue;
+    box-shadow:0px 5px 5px lightgray;
+}
+
+/* sidebar */
+#sidebar-wrapper {
+margin-left: -15rem;/*dissapear on medium breakpoint*/
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -15rem;
+}
+}
